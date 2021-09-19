@@ -3,8 +3,7 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="testcases.mytheresa.NewUserJourney" />
-			<class name="testcases.mytheresa.WishListCheckAdd" />
+			<class name="testcases.qliro.NewUserJourney" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,4 +1,4 @@
-# How to run the Test #
+qliro-seleniumWD-assignment# How to run the Test #
 
 **Prerequisite**
 1. Java environment 
@@ -9,16 +9,14 @@
 	
 
 - Configure webdriver.
+    - I developed this POC in mac.
     - I used ChromeDriver but you can choose other webdriver eg. Mozilla GeckoDriver 
     - So first download ChromeDriver from [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads).
-    - Copy your downloaded **chromedriver.exe** file path.
-    - Go to `E2EUserJourney\src\test\java\testcases\mytheresa\WebdriverSettings.java` file.
+    - Copy your downloaded **chromedriver** file path.
+    - Go to `qliro-seleniumWD-assignment\src\test\java\testcases\mytheresa\WebdriverSettings.java` file.
     - Paste the copied file path in `System.setProperty("webdriver.chrome.driver","Paste path here")`.
+    - I have placed chromedriver withing the project at '/ChromeDriver/chromedriver'
 
-
-- Configure test email address.
-    - Change the value of `USER_EMAIL` in `E2EUserJourney\src\main\java\variables\mytheresa\UserVariables.java` 
-    - Note: with same email address you can not create account , so please change the email address before every run of the test. 
 
 	
 Project is ready to run. Execute following commands and enjoy the automatic web-driver test.
@@ -27,4 +25,4 @@ Project is ready to run. Execute following commands and enjoy the automatic web-
 - Run `mvn compile`
 - Run `mvn test`
 
-You can find the test result in `E2EUserJourney\target\surefire-reports\index.html`.
+You can find the test result in `qliro-seleniumWD-assignment\target\surefire-reports\index.html`.
